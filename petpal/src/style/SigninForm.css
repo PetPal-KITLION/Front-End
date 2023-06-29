@@ -1,0 +1,66 @@
+#signinForm {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#signinForm div div {
+  width: 46%;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+#passwordP {
+  font-size: 8px;
+  position: relative;
+  right: 64px;
+  top: 24px;
+}
+
+#pwCheckP {
+  font-size: 8px;
+  position: relative;
+  right: 142px;
+  top: 24px;
+}
+
+h4 {
+  position: relative;
+  left: 4px;
+  top: 24px;
+  margin: 0;
+}
+
+input {
+  width: 100%;
+  padding: 4px;
+  background-color: #e8e8e8;
+  border: 1px solid #e8e8e8;
+}
+
+.checkButton {
+  position: relative;
+  right: 32px;
+  top: 22px;
+  background-color: white;
+  border: 1px solid #999999;
+  color: #999999;
+  padding: 4px;
+  width: 72px;
+}
+
+#nameAndNickname,
+#emailDiv,
+#passwordDiv,
+#pwCheckDiv,
+#telDiv,
+#numberDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
