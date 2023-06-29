@@ -1,0 +1,22 @@
+#signinButtonDiv {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#signinButton {
+  display: block;
+  margin: 36px auto;
+  background-color: #f5d584;
+  color: #7e5100;
+  border: 1px solid #f5d584;
+  width: 40%;
+  padding: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#signinText {
+  text-decoration: none;
+}
