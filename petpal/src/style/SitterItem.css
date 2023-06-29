@@ -1,0 +1,48 @@
+#sitterItem {
+  display: flex;
+  border-radius: 5px;
+  box-shadow: 1.5px 3px 1.5px;
+  width: 80%;
+  margin: 10px auto;
+  justify-content: "space-between";
+}
+#itemContent p {
+  line-height: 0.8;
+  font-weight: bold;
+}
+#itemContent {
+  margin-left: 10px;
+}
+#itemBtn {
+  margin-left: auto;
+  margin-top: auto;
+}
+#itemBtn button {
+  cursor: pointer;
+  border-radius: 20px;
+  width: 150px;
+  border: none;
+  background-color: #fed586;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0 10px 10px 0;
+}
+#itemBtn button:hover {
+  background-color: burlywood;
+}
+#chatBtn {
+  border-radius: 100px;
+  background-color: #fed586;
+  padding: 5px;
+  width: 15%;
+  cursor: pointer;
+  margin-bottom: 40%;
+  margin-left: 60%;
+}
+#chatBtn:hover {
+  background-color: burlywood;
+}
+#chatBtn img {
+  width: 100%;
+  margin-top: 5px;
+}
