@@ -1,0 +1,8 @@
+#Main1Div {
+  height: 470px;
+  text-align: center;
+  background-image: url(../../public/image/Main1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

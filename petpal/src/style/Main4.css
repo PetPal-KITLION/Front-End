@@ -1,0 +1,49 @@
+#Main4Div {
+  background-image: url(../../public/image/Main4.png);
+  background-position: center;
+  background-size: cover;
+}
+
+#Main4DivCommu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#communication1 {
+  display: flex;
+  align-items: center;
+  border: 1px solid none;
+  background-color: white;
+  box-shadow: 5px 5px 5px black;
+  margin-right: 20px;
+}
+
+#communication2 {
+  display: flex;
+  align-items: center;
+  border: 1px solid none;
+  background-color: white;
+  box-shadow: 5px 5px 5px black;
+}
+
+#btcenter {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#commubt {
+  background-color: antiquewhite;
+  border: none;
+  border-radius: 10%;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 40px;
+  box-shadow: 5px 5px 5px gray;
+  text-align: center;
+}
+
+#ask {
+  font-size: 15px;
+  font-weight: bold;
+}

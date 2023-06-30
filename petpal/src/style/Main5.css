@@ -1,0 +1,25 @@
+#welcomePetpal {
+  display: flex;
+  justify-content: center;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#footer1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#footer2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#footer3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

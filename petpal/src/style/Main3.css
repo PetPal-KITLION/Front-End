@@ -1,0 +1,33 @@
+#Main3Div {
+  background-image: url(../../public/image/Main3.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+#supportSitter {
+  background-color: white;
+  padding: 20px 10px 10px 10px;
+  border-radius: 10%;
+  border: 1px solid white;
+  box-shadow: 5px 5px 5px gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto 40%;
+}
+
+#supportNow {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+#supportbt {
+  background-color: antiquewhite;
+  border: none;
+  border-radius: 10%;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 40px;
+  box-shadow: 5px 5px 5px gray;
+}

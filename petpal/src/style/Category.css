@@ -1,0 +1,47 @@
+#logoDiv {
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+#searchForm {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+  top: -100px;
+}
+
+#search > input {
+  font-size: 15x;
+  margin-bottom: 9px;
+  border: 1px solid #f4f4f4;
+  background-color: #f4f4f4;
+  padding: 7px;
+  width: 170px;
+  border-radius: 10%;
+}
+#category {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin: 20px 10%;
+  align-items: center;
+}
+
+#dropCt {
+  display: none;
+  background-color: #f9f9f9;
+}
+
+#dropCt > li {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#chat {
+  display: flex;
+  justify-content: end;
+}
