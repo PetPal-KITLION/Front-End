@@ -1,0 +1,79 @@
+#communityParentDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8%;
+  margin-bottom: 5%;
+}
+#communityDiv {
+  width: 90vw;
+  box-shadow: 5px 5px 5px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+#communityDiv h2 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+#communityRight button {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 20px;
+  box-shadow: 1px 1px 1px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 20px;
+}
+#communityRight button:hover {
+  background-color: #fed586;
+}
+#communityRight select {
+  padding: 3px 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+#container {
+  display: flex;
+}
+
+#communityDiv #sideMenu {
+  width: 20%;
+}
+
+#communityDiv #menuList {
+  color: #7e7e7e;
+  font-size: 16px;
+}
+
+#communityDiv #menuList li {
+  margin-bottom: 4px;
+}
+
+#communityDiv #menuList li:hover {
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#communityDiv #list {
+  width: 70%;
+}
+
+#communityDiv #showMore {
+  display: block;
+  margin: 0 auto;
+}
+
+#communityDiv #searchBar {
+  display: block;
+  width: 35%;
+  margin: 8px auto;
+  padding: 8px;
+  font-size: 20px;
+  background-color: #ececec;
+  border-radius: 10px;
+}

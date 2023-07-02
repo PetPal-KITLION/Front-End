@@ -1,0 +1,87 @@
+#helpParentDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8%;
+  margin-bottom: 5%;
+}
+
+#helpDiv {
+  width: 90vw;
+  box-shadow: 5px 5px 5px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+#helpDiv h2 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+#helpDiv #helpList {
+  color: #7e7e7e;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+#helpDiv #helpList li {
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+
+#helpDiv #helpList li:hover {
+  color: black;
+}
+
+#helpDiv #helpSelect {
+  padding: 32px 60px;
+}
+
+#helpDiv #helpSelect H2 {
+  margin: 0;
+}
+
+#helpDiv #selectContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+#helpDiv #selectContent ol {
+  padding-left: 16px;
+  color: #7e7e7e;
+}
+
+#helpDiv #selectContent li {
+  display: list-item;
+}
+
+#helpDiv #selectContent li:hover {
+  cursor: pointer;
+  color: black;
+}
+
+#helpDiv #selectContent > * {
+  width: 30%;
+}
+
+#helpDiv #selectContent #helpButton {
+  display: flex;
+  font-size: 24px;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border: none;
+  background-color: white;
+  box-shadow: 3px 3px 3px;
+  cursor: pointer;
+}
+
+#helpDiv #selectContent #helpButton:hover {
+  background-color: #fed586;
+}
+
+#helpDiv #helpMenu {
+  color: #7e7e7e;
+}
