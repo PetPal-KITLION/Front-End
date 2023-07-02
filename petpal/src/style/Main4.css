@@ -2,6 +2,11 @@
   background-image: url(../../public/image/Main4.png);
   background-position: center;
   background-size: cover;
+  height: 530px;
+}
+
+#Main4DivText {
+  padding-left: 30px;
 }
 
 #Main4DivCommu {
@@ -15,7 +20,14 @@
   border: 1px solid none;
   background-color: white;
   box-shadow: 5px 5px 5px black;
-  margin-right: 20px;
+}
+
+#chatImg1 {
+  position: absolute;
+}
+
+#chaImg2 {
+  position: absolute;
 }
 
 #communication2 {
@@ -46,4 +58,10 @@
 #ask {
   font-size: 15px;
   font-weight: bold;
+  text-align: center;
+  width: 300px;
+}
+
+#askCo2 {
+  margin-left: 15px;
 }

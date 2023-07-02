@@ -5,7 +5,7 @@ const Main5 = () => {
   return (
     <div id="Main5Div">
       <div id="welcomePetpal">
-        <h1>펫팔에 오신 것을 환영합니다!</h1>
+        <p id="content">펫팔에 오신 것을 환영합니다!</p>
       </div>
       <div>
         <div id="footer">

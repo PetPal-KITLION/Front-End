@@ -9,8 +9,8 @@ const Main1 = () => {
         style={{ width: "7%" }}
         alt="bone"
       />
-      <h1>누구나 쉽게, 안전하게 사용할 수 있는 시터 플랫폼</h1>
-      <h1>지금 바로 팻팔을 사용해 보세요.</h1>
+      <p id="content">누구나 쉽게, 안전하게 사용할 수 있는 시터 플랫폼</p>
+      <p id="content">지금 바로 팻팔을 사용해 보세요.</p>
       <img
         src={`${process.env.PUBLIC_URL}/image/logoRemove.png`}
         style={{ width: "15%" }}

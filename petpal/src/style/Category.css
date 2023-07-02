@@ -21,6 +21,7 @@
   width: 170px;
   border-radius: 10%;
 }
+
 #category {
   display: flex;
   justify-content: space-between;
@@ -29,19 +30,12 @@
   align-items: center;
 }
 
-#dropCt {
+ul {
   display: none;
-  background-color: #f9f9f9;
-}
-
-#dropCt > li {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+  color: gray;
 }
 
 #chat {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }

@@ -35,6 +35,18 @@
   margin-top: 30px;
 }
 
+#applySitterImg1 {
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+}
+
+#applySitterImg2 {
+  text-align: center;
+  position: absolute;
+  bottom: -344px;
+}
+
 #applybt {
   background-color: antiquewhite;
   border: none;

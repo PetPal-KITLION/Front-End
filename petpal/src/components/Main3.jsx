@@ -5,13 +5,20 @@ import { Link } from "react-router-dom";
 const Main3 = () => {
   return (
     <div id="Main3Div">
-      <h4>
+      <p id="title">
         시터 지원
         <img src={`${process.env.PUBLIC_URL}/image/pets.png`} alt="pets" />
-      </h4>
-      <h1>시터가 되고 싶으신가요?</h1>
-      <h1>지금 바로 간단한 지원서 작성으로 시터가 될 수 있어요.</h1>
+      </p>
+      <p id="content">시터가 되고 싶으신가요?</p>
+      <p id="content">지금 바로 간단한 지원서 작성으로 시터가 될 수 있어요.</p>
       <div id="supportSitter">
+        <div id="applySitterImg3">
+          <img
+            src={`${process.env.PUBLIC_URL}/image/pet_supplies.png`}
+            style={{ width: "40%" }}
+            alt="bone"
+          />
+        </div>
         <img
           src={`${process.env.PUBLIC_URL}/image/Support.png`}
           style={{ width: "90%" }}

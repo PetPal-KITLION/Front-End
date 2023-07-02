@@ -3,6 +3,13 @@
   background-position: center;
   background-size: cover;
   text-align: center;
+  height: 600px;
+}
+
+#applySitterImg3 {
+  text-align: center;
+  position: absolute;
+  bottom: -945px;
 }
 
 #supportSitter {
