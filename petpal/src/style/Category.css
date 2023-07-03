@@ -30,11 +30,6 @@
   align-items: center;
 }
 
-ul {
-  display: none;
-  color: gray;
-}
-
 #chat {
   display: flex;
   justify-content: flex-end;

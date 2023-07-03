@@ -1,0 +1,21 @@
+#helpListParentDiv {
+  box-shadow: 5px 5px 5px;
+  margin-bottom: 24px;
+}
+
+#helpListDiv {
+  padding: 0 0 16px 24px;
+}
+
+#helpListParentDiv #helpListDiv * {
+  margin: 0;
+}
+
+#helpListDiv #category {
+  color: #7e7e7e;
+  font-size: 12px;
+}
+
+#helpListDiv #title {
+  padding: 0;
+}

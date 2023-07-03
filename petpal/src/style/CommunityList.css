@@ -1,0 +1,76 @@
+#itemDiv {
+  box-shadow: 5px 5px 5px;
+  margin-bottom: 16px;
+}
+
+#itemDiv #hotItem {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+#itemDiv #normalItem {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+#itemLeft #hot {
+  position: relative;
+  right: 8px;
+  bottom: 8px;
+}
+
+#itemDiv #hotP,
+#itemDiv #writer,
+#itemDiv #category {
+  display: inline;
+  font-size: 12px;
+}
+
+#itemDiv #hotP {
+  box-shadow: 2px 2px 2px;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+#itemRight,
+#itemDiv #item {
+  display: flex;
+  align-items: center;
+}
+
+#itemDiv #chatting {
+  padding: 5px;
+  cursor: pointer;
+}
+
+#itemDiv #title {
+  font-size: 24px;
+  padding: 0;
+}
+
+#itemDiv #content {
+  padding: 4px 24px;
+}
+
+#itemDiv #content * {
+  margin: 0;
+}
+
+#itemDiv #commentAndRecommend {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+#itemDiv #comment,
+#itemDiv #recommend {
+  display: flex;
+  gap: 4px;
+}
+
+#itemDiv #commentAndRecommend p {
+  width: 20px;
+  font-size: 16px;
+}
