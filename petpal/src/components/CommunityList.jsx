@@ -38,6 +38,7 @@ const CommunityList = ({ props, hot }) => {
                 <img
                   src={`${process.env.PUBLIC_URL}/image/tooltip.png`}
                   style={{ width: "20px" }}
+                  alt="tooltip"
                 />
                 <p>{props.comments}</p>
               </div>
@@ -45,6 +46,7 @@ const CommunityList = ({ props, hot }) => {
                 <img
                   src={`${process.env.PUBLIC_URL}/image/thumb_up.png`}
                   style={{ width: "20px" }}
+                  alt="thumb_up"
                 />
                 <p>{props.recommend}</p>
               </div>
@@ -78,6 +80,7 @@ const CommunityList = ({ props, hot }) => {
                 <img
                   src={`${process.env.PUBLIC_URL}/image/tooltip.png`}
                   style={{ width: "20px" }}
+                  alt="tooltip"
                 />
                 <p>{props.comments}</p>
               </div>
@@ -85,6 +88,7 @@ const CommunityList = ({ props, hot }) => {
                 <img
                   src={`${process.env.PUBLIC_URL}/image/thumb_up.png`}
                   style={{ width: "20px" }}
+                  alt="thumb_up"
                 />
                 <p>{props.recommend}</p>
               </div>

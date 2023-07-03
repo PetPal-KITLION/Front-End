@@ -81,6 +81,7 @@ const CommunityContainer = () => {
         <img
           id="showMore"
           src={`${process.env.PUBLIC_URL}/image/arrow_forward_ios.png`}
+          alt="arrow"
         />
         <input
           id="searchBar"
