@@ -10,8 +10,8 @@ const Main5 = () => {
       <div>
         <div id="footer">
           <div id="footer1">
-            <div>펫 시터</div>
-            <div>시터 신청, 찾기, 지원</div>
+            <div id="subject">펫 시터</div>
+            <div id="text">시터 신청, 찾기, 지원</div>
             <img
               src={`${process.env.PUBLIC_URL}/image/강아지 아이콘.png`}
               style={{ width: "120%" }}
@@ -19,8 +19,8 @@ const Main5 = () => {
             />
           </div>
           <div id="footer2">
-            <div>커뮤니티</div>
-            <div>정보 공유와 소통</div>
+            <div id="subject">커뮤니티</div>
+            <div id="text">정보 공유와 소통</div>
             <img
               src={`${process.env.PUBLIC_URL}/image/보내기 아이콘.png`}
               style={{ width: "120%" }}
@@ -28,8 +28,8 @@ const Main5 = () => {
             />
           </div>
           <div id="footer3">
-            <div>고객문의</div>
-            <div>궁금한 것이 있나요?</div>
+            <div id="subject">고객문의</div>
+            <div id="text">궁금한 것이 있나요?</div>
             <img
               src={`${process.env.PUBLIC_URL}/image/고객상담 아이콘.png`}
               style={{ width: "120%" }}

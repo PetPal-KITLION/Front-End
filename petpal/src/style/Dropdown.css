@@ -5,10 +5,10 @@
   background-color: rgb(255, 255, 255);
   text-align: center;
   list-style: none;
-  margin-left: 155px;
-  top: 175px;
+  margin-left: 20vh;
+  top: 23vh;
 }
 
 #dropMenu:not(:last-child) {
-  margin-right: 125px;
+  margin-right: 16.8vh;
 }
