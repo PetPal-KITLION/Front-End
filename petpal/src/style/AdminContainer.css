@@ -1,0 +1,76 @@
+#AdminContainerDiv {
+  display: flex;
+}
+
+#AdminContainerDiv #sideMenu {
+  width: 30%;
+}
+
+#AdminContainerDiv #sideMenu li {
+  margin-bottom: 12%;
+  cursor: pointer;
+}
+
+#AdminContainerDiv #sideMenu li:hover {
+  font-weight: 700;
+}
+
+#AdminContainerDiv #main {
+  width: 70%;
+}
+
+#AdminContainerDiv #membership {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1%;
+  margin-bottom: 2%;
+}
+
+#AdminContainerDiv #membership > * {
+  width: 25%;
+}
+
+#AdminContainerDiv #membership img,
+#AdminContainerDiv #membership p {
+  display: block;
+  text-align: center;
+  margin: 3% auto;
+  font-weight: 700;
+}
+
+#AdminContainerDiv #membership #face img {
+  background-color: #5a92ff;
+  padding: 1%;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px grey;
+  cursor: pointer;
+}
+
+#AdminContainerDiv #FQA #title {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#AdminContainerDiv #FQA #title p {
+  margin: 0 2%;
+  font-size: 80%;
+  line-height: 200%;
+  color: red;
+}
+
+#AdminContainerDiv #FQA #list {
+  margin-bottom: 3%;
+}
+
+#AdminContainerDiv #FQA li,
+#AdminContainerDiv #application li {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 2%;
+}
+
+#AdminContainerDiv #application #form {
+  display: flex;
+  gap: 5%;
+  margin-bottom: 20%;
+}

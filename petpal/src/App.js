@@ -6,6 +6,7 @@ import SigninPage from "./pages/SigninPage";
 import SitterSearch from "./pages/SitterSearch";
 import CommunityPage from "./pages/CommunityPage";
 import HelpPage from "./pages/HelpPage";
+import AdminPage from "./pages/AdminPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/sitterSearch" element={<SitterSearch />} />
         <Route path="/community" element={<CommunityPage />} />
         <Route path="/help" element={<HelpPage />} />
+        <Route path="/admin" element={<AdminPage />} />
       </Routes>
     </>
   );

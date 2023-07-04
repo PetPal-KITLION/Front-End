@@ -1,0 +1,45 @@
+#AdminFQAListDiv {
+  display: flex;
+  width: 55%;
+  align-items: center;
+}
+
+#AdminFQAListDiv #category {
+  padding: 1%;
+  border: 1px solid black;
+  border-radius: 1rem;
+  font-size: 80%;
+  width: 15%;
+  justify-content: center;
+  margin: 2% 0;
+}
+
+#AdminFQAListDiv #ellipse img {
+  position: relative;
+  bottom: 2.5vh;
+}
+
+#AdminFQAListDiv #title {
+  padding: 0;
+  margin: 0 1% 0 0;
+  font-size: 100%;
+}
+
+#AdminFQAListDiv #writer,
+#AdminFQAListDiv #date {
+  padding: 0;
+  margin: 0 1% 0 0;
+  font-size: 70%;
+}
+
+#AdminFQAListDiv #answerButton {
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 0.5% 1.5%;
+  background-color: white;
+}
+
+#AdminFQAListDiv #answerButton:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
