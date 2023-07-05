@@ -1,0 +1,59 @@
+#ProfileParentDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8%;
+  margin-bottom: 10%;
+}
+
+#ProfileDiv {
+  display: flex;
+  width: 90vw;
+  height: 40vw;
+  box-shadow: 5px 5px 5px;
+  overflow: hidden;
+  border-radius: 20px;
+  padding-bottom: 5%;
+}
+
+#ProfileDiv #left {
+  width: 50%;
+  height: 100%;
+}
+
+#ProfileDiv #profile {
+  display: flex;
+  margin-bottom: 3%;
+  height: 45%;
+}
+
+#ProfileDiv #image {
+  background-color: lightgray;
+  width: 35%;
+  margin: 3% 1% 0 4%;
+}
+
+#ProfileDiv #image p {
+  text-align: center;
+  margin: 50% 0;
+}
+
+#ProfileDiv #content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1%;
+  height: 100%;
+  font-size: 2.5vh;
+}
+
+#ProfileDiv #content p {
+  margin: 0;
+}
+
+#ProfileDiv #service {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  padding-right: 3%;
+}
