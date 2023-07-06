@@ -2,6 +2,8 @@ import React from "react";
 import "../style/LoginForm.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import IdSearchModal from "./IdSearchModal";
+import PwSearchModal from "./PwSearchModal";
 
 const LoginForm = () => {
   const [values, setValues] = useState({
@@ -9,6 +11,14 @@ const LoginForm = () => {
     password: "",
     loginKeep: "off",
   });
+
+  const [idShow, setIdShow] = useState(false);
+  const [pwShow, setPwShow] = useState(false);
+
+  const handleIdClose = () => setIdShow(false);
+  const handlePwClose = () => setPwShow(false);
+  const handleIdShow = () => setIdShow(true);
+  const handlePwShow = () => setPwShow(true);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -23,6 +33,8 @@ const LoginForm = () => {
     e.preventDefault();
     console.log(values);
   };
+
+  console.log(pwShow);
 
   return (
     <div onSubmit={handleSubmit}>
@@ -59,8 +71,22 @@ const LoginForm = () => {
       </form>
       <div id="signAndSearch">
         <Link to="/Signin">회원가입</Link>
-        <Link to="/IDSearch">ID 찾기</Link>
-        <Link to="/PasswordSearch">비밀번호 찾기</Link>
+        <button
+          type="button"
+          className="btn btn-primary"
+          onClick={handleIdShow}
+        >
+          ID 찾기
+        </button>
+        <button
+          type="button"
+          className="btn btn-primary"
+          onClick={handlePwShow}
+        >
+          비밀번호 찾기
+        </button>
+        <IdSearchModal show={idShow} hide={handleIdClose} />
+        <PwSearchModal show={pwShow} hide={handlePwClose} />
       </div>
     </div>
   );

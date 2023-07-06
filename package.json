@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "bootstrap": "^5.3.0",
+    "react-bootstrap": "^2.8.0",
     "react-full-page": "^0.1.12",
     "react-fullpage": "^0.1.19"
   }
