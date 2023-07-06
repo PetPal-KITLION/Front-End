@@ -12,7 +12,7 @@ const Header = () => {
       <div id="logoDiv">
         <img
           src={`${process.env.PUBLIC_URL}/image/logo.png`}
-          style={{ width: "12%" }}
+          style={{ width: "8%" }}
           alt="logo"
         />
         <div id="searchForm">
