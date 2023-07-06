@@ -1,7 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import "../style/ProfileContainer.css";
 
 const ProfileContainer = () => {
+  const [modify, setModify] = useState("no");
+  const [values, setValues] = useState({
+    personName: "",
+    personAddress: "",
+    personAge: "",
+    personReview: "",
+    animalName: "",
+    animalSpecies: "",
+    animalAge: "",
+    animalFeature: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setValues((preValue) => ({
+      ...preValue,
+      [name]: value,
+    }));
+    console.log(values);
+  };
+
+  const handleModify = (e) => {
+    if (modify === "no") {
+      setModify("yes");
+    } else {
+      setModify("no");
+    }
+  };
+
   return (
     <div id="ProfileParentDiv">
       <div id="ProfileDiv">
@@ -11,10 +40,42 @@ const ProfileContainer = () => {
               <p>사진</p>
             </div>
             <div id="content">
-              <p>이름: </p>
-              <p>거주지: </p>
-              <p>나이: </p>
-              <p>리뷰후기: </p>
+              <p>
+                이름:{" "}
+                <input
+                  value={values.personName}
+                  name="personName"
+                  readOnly={modify === "yes" ? false : true}
+                  onChange={handleChange}
+                />
+              </p>
+              <p>
+                거주지:{" "}
+                <input
+                  value={values.personAddress}
+                  name="personAddress"
+                  readOnly={modify === "yes" ? false : true}
+                  onChange={handleChange}
+                />
+              </p>
+              <p>
+                나이:{" "}
+                <input
+                  value={values.personAge}
+                  name="personAge"
+                  readOnly={modify === "yes" ? false : true}
+                  onChange={handleChange}
+                />
+              </p>
+              <p>
+                리뷰후기:{" "}
+                <input
+                  value={values.personReview}
+                  name="personReview"
+                  readOnly={modify === "yes" ? false : true}
+                  onChange={handleChange}
+                />
+              </p>
             </div>
           </div>
           <div id="profile">
@@ -22,11 +83,48 @@ const ProfileContainer = () => {
               <p>사진</p>
             </div>
             <div id="content">
-              <p>이름: </p>
-              <p>거주지: </p>
-              <p>나이: </p>
-              <p>리뷰후기: </p>
+              <p>
+                이름:{" "}
+                <input
+                  value={values.animalName}
+                  name="animalName"
+                  readOnly={modify === "yes" ? false : true}
+                  onChange={handleChange}
+                />
+              </p>
+              <p>
+                종:{" "}
+                <input
+                  value={values.animalSpecies}
+                  name="animalSpecies"
+                  readOnly={modify === "yes" ? false : true}
+                  onChange={handleChange}
+                />
+              </p>
+              <p>
+                나이:{" "}
+                <input
+                  value={values.animalAge}
+                  name="animalAge"
+                  readOnly={modify === "yes" ? false : true}
+                  onChange={handleChange}
+                />
+              </p>
+              <p>
+                특이사항:{" "}
+                <input
+                  value={values.animalFeature}
+                  name="animalFeature"
+                  readOnly={modify === "yes" ? false : true}
+                  onChange={handleChange}
+                />
+              </p>
             </div>
+          </div>
+          <div id="modify">
+            <button onClick={handleModify}>
+              {modify === "no" ? "수정하기" : "수정완료"}
+            </button>
           </div>
         </div>
         <div id="service">
