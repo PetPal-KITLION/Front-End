@@ -8,21 +8,26 @@ import CommunityPage from "./pages/CommunityPage";
 import HelpPage from "./pages/HelpPage";
 import AdminPage from "./pages/AdminPage";
 import ProfilePage from "./pages/ProfilePage";
+import Layout from './components/Layout';
+import SitterApplyPage from './pages/SitterApplyPage';
+import ResumePage from './pages/ResumePage';
 
 function App() {
   return (
-    <>
+    <Layout>
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signin" element={<SigninPage />} />
         <Route path="/sitterSearch" element={<SitterSearch />} />
+        <Route path="/sitterApply" element={<SitterApplyPage />} />
         <Route path="/community" element={<CommunityPage />} />
         <Route path="/help" element={<HelpPage />} />
         <Route path="/admin" element={<AdminPage />} />
         <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/resume" element={<ResumePage />} />
       </Routes>
-    </>
+    </Layout>
   );
 }
 

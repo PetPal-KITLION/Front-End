@@ -1,6 +1,7 @@
 import React from 'react';
 import "../style/SitterSearch.css";
 import SitterItem from '../components/SitterItem';
+import Header from '../components/Header';
 
 const SitterSearch = () => {
     
@@ -8,6 +9,8 @@ const SitterSearch = () => {
 
     }
     return (
+        <>
+            <Header />
         <div id="sitSeachParentDiv">
             <div id="sitSearchDiv">
                 <h2><div id="sitSearchLeft">시터신청<img src={`${process.env.PUBLIC_URL}/image/hand.png`} style={{width:"15%"}} alt="hand" /></div>
@@ -22,13 +25,13 @@ const SitterSearch = () => {
                         </select>
                     </div>
                 </h2>
-
                 <SitterItem />
                 <SitterItem />
                 <SitterItem />
             </div>
-            
         </div>
+        </>
+        
     );
 };
 
