@@ -1,0 +1,45 @@
+#findPW label {
+  display: block;
+  color: black;
+  font-size: 2vh;
+  font-weight: bold;
+}
+
+#findEmail {
+  display: flex;
+  flex-direction: column;
+}
+
+#Pwfind_1 {
+  width: 30%;
+  background-color: #e8e8e8;
+  border: 1px solid #e8e8e8;
+}
+
+#writeNum {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%;
+}
+
+#findNum {
+  width: 30%;
+  background-color: #e8e8e8;
+  border: 1px solid #e8e8e8;
+}
+
+#sendNum {
+  margin-left: 2%;
+  font-size: 2vh;
+  background-color: white;
+  border: 1px solid black;
+  font-weight: 700;
+}
+
+#ok {
+  margin-left: 2%;
+  font-size: 2vh;
+  background-color: white;
+  border: 1px solid black;
+  font-weight: 700;
+}
