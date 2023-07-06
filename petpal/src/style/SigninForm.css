@@ -9,7 +9,7 @@
   width: 46%;
 }
 
-label {
+#signinForm label {
   display: block;
   font-size: 12px;
   font-weight: 700;
@@ -29,21 +29,21 @@ label {
   top: 24px;
 }
 
-h4 {
+#signinForm h4 {
   position: relative;
   left: 4px;
   top: 24px;
   margin: 0;
 }
 
-input {
+#signinForm input {
   width: 100%;
   padding: 4px;
   background-color: #e8e8e8;
   border: 1px solid #e8e8e8;
 }
 
-.checkButton {
+#signinForm .checkButton {
   position: relative;
   right: 32px;
   top: 22px;

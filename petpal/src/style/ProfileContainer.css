@@ -51,6 +51,23 @@
   margin: 0;
 }
 
+#ProfileDiv #modify {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#ProfileDiv #modify button {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#ProfileDiv #modify button:hover {
+  background-color: lightgray;
+}
+
 #ProfileDiv #service {
   display: flex;
   justify-content: flex-end;
