@@ -1,0 +1,52 @@
+#sitter_2 {
+  margin-bottom: 5vh;
+}
+
+#checkBox {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#Exp {
+  display: flex;
+}
+
+#petLicense,
+#petExp,
+#petKind {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10%;
+}
+
+#checkBoxPL {
+  display: flex;
+  align-items: center;
+}
+
+#ExpText {
+  margin-bottom: 1vh;
+  margin-top: 3vh;
+}
+
+#petExp,
+#petLicense,
+#petKind {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#licenseY,
+#petExpY {
+  width: 40%;
+}
+
+#licenseN,
+#petExpN,
+#cat,
+#dog,
+#bird,
+#rode,
+#ect {
+  width: 23%;
+}

@@ -8,9 +8,10 @@ import CommunityPage from "./pages/CommunityPage";
 import HelpPage from "./pages/HelpPage";
 import AdminPage from "./pages/AdminPage";
 import ProfilePage from "./pages/ProfilePage";
-import Layout from './components/Layout';
-import SitterApplyPage from './pages/SitterApplyPage';
-import ResumePage from './pages/ResumePage';
+import Layout from "./components/Layout";
+import SitterApplyPage from "./pages/SitterApplyPage";
+import ResumePage from "./pages/ResumePage";
+import SitterApply from "./pages/SitterApply";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/admin" element={<AdminPage />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/resume" element={<ResumePage />} />
+        <Route path="/sitterApply" element={<SitterApply />} />
       </Routes>
     </Layout>
   );

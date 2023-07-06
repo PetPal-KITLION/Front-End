@@ -1,0 +1,16 @@
+#sitterHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4%;
+}
+
+#headerApply {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+#headerEssential {
+  color: gray;
+  font-size: 10px;
+  font-weight: 700;
+}

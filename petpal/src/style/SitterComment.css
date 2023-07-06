@@ -1,0 +1,18 @@
+#comment {
+  display: flex;
+}
+
+#expPet {
+  margin-right: 10%;
+}
+
+#expComment,
+#petAllergy {
+  width: 63vh;
+  height: 20vh;
+}
+
+#commentTitle {
+  font-size: 15px;
+  font-weight: 700;
+}
