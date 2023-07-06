@@ -34,3 +34,11 @@
   display: flex;
   justify-content: flex-end;
 }
+
+#ct {
+  cursor: pointer;
+}
+
+#ct:hover {
+  font-weight: 700;
+}
