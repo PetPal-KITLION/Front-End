@@ -45,7 +45,7 @@ const ProfileContainer = () => {
                 <input
                   value={values.personName}
                   name="personName"
-                  readOnly={modify === "yes" ? false : true}
+                  disabled={modify === "yes" ? false : true}
                   onChange={handleChange}
                 />
               </p>
@@ -54,7 +54,7 @@ const ProfileContainer = () => {
                 <input
                   value={values.personAddress}
                   name="personAddress"
-                  readOnly={modify === "yes" ? false : true}
+                  disabled={modify === "yes" ? false : true}
                   onChange={handleChange}
                 />
               </p>
@@ -63,7 +63,7 @@ const ProfileContainer = () => {
                 <input
                   value={values.personAge}
                   name="personAge"
-                  readOnly={modify === "yes" ? false : true}
+                  disabled={modify === "yes" ? false : true}
                   onChange={handleChange}
                 />
               </p>
@@ -72,7 +72,7 @@ const ProfileContainer = () => {
                 <input
                   value={values.personReview}
                   name="personReview"
-                  readOnly={modify === "yes" ? false : true}
+                  disabled={modify === "yes" ? false : true}
                   onChange={handleChange}
                 />
               </p>
@@ -88,7 +88,7 @@ const ProfileContainer = () => {
                 <input
                   value={values.animalName}
                   name="animalName"
-                  readOnly={modify === "yes" ? false : true}
+                  disabled={modify === "yes" ? false : true}
                   onChange={handleChange}
                 />
               </p>
@@ -97,7 +97,7 @@ const ProfileContainer = () => {
                 <input
                   value={values.animalSpecies}
                   name="animalSpecies"
-                  readOnly={modify === "yes" ? false : true}
+                  disabled={modify === "yes" ? false : true}
                   onChange={handleChange}
                 />
               </p>
@@ -106,7 +106,7 @@ const ProfileContainer = () => {
                 <input
                   value={values.animalAge}
                   name="animalAge"
-                  readOnly={modify === "yes" ? false : true}
+                  disabled={modify === "yes" ? false : true}
                   onChange={handleChange}
                 />
               </p>
@@ -115,7 +115,7 @@ const ProfileContainer = () => {
                 <input
                   value={values.animalFeature}
                   name="animalFeature"
-                  readOnly={modify === "yes" ? false : true}
+                  disabled={modify === "yes" ? false : true}
                   onChange={handleChange}
                 />
               </p>
