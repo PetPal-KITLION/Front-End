@@ -1,0 +1,33 @@
+#reviewImgDiv {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+#sitterApplyDiv h4 {
+  text-align: center;
+  margin-top: 3%;
+  font-weight: bold;
+}
+#reviewItemsDiv {
+  display: flex;
+  justify-content: center;
+}
+#reviewContent {
+  font-size: 13px;
+  color: gray;
+}
+#reviewItemsDiv p:first-child {
+  font-weight: bold;
+  font-size: 18px;
+}
+#reviewItemContentDiv {
+  text-align: center;
+}
+#moreReview p {
+  font-weight: bold;
+}
+#moreReview {
+  text-align: center;
+  margin: 5% 0;
+}

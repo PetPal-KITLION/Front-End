@@ -1,0 +1,7 @@
+#reviewItemDiv {
+  box-shadow: 1px 1px 1px 1px;
+  padding: 10px;
+  display: flex;
+  width: 30%;
+  margin: 3%;
+}

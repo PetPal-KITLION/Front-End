@@ -16,6 +16,7 @@ import InquiryAnswer from "./pages/InquiryAnswer";
 import CommunityWritePage from "./pages/CommunityWritePage";
 import CommunityDetailPage from "./pages/CommunityDetailPage";
 import SitterWritePage from "./pages/SitterWritePage";
+import ReviewPage from './pages/ReviewPage';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path="/customerInquiry" element={<CustomerInquiry />} />
         <Route path="/answerInquiry" element={<InquiryAnswer />} />
         <Route path="/sitterWrite" element={<SitterWritePage />} />
+        <Route path="/review" element={<ReviewPage />}/>
       </Routes>
     </Layout>
   );
