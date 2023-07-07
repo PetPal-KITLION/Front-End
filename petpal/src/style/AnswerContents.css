@@ -1,0 +1,43 @@
+#questionDiv {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 1%;
+}
+
+#question {
+  border: 1px solid white;
+  width: 60%;
+  height: 40vh;
+  border-radius: 3%;
+  background-color: antiquewhite;
+}
+
+#answerQDiv {
+  display: flex;
+  justify-content: start;
+}
+
+#answerQ {
+  border: 1px solid white;
+  width: 60%;
+  height: 35vh;
+  border-radius: 5%;
+  background-color: rgb(199, 228, 247);
+}
+
+#AnsText {
+  margin-left: 1%;
+  margin-top: 1%;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+#Q {
+  position: absolute;
+  top: 30%;
+}
+
+#A {
+  position: absolute;
+  bottom: 25%;
+}

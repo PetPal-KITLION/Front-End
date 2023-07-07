@@ -1,0 +1,14 @@
+#InquiryAnswerP {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#InquiryAnswerDiv {
+  width: 85%;
+  height: 90vh;
+  border-radius: 3%;
+  box-shadow: 3px 3px 3px;
+  margin-top: 2%;
+}
