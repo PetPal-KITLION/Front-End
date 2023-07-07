@@ -1,20 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../style/SitterSearch.css";
 import SitterItem from "../components/SitterItem";
 import Header from "../components/Header";
 import axios from "axios";
+import { useState } from "react";
 
 const SitterSearch = () => {
-  axios
-    .get(
-      "http://ec2-15-164-100-106.ap-northeast-2.compute.amazonaws.com:8000/petsitters/posts/"
-    )
-    .then((res) => {
-      console.log(res);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+  const [list, setList] = useState([{}]);
+  useEffect(() => {
+    axios
+      .get(
+        "http://ec2-15-164-100-106.ap-northeast-2.compute.amazonaws.com:8000/petsitters/posts/"
+      )
+      .then((res) => {
+        console.log(res);
+        setList(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   const handleChangeSelect = () => {};
   return (
@@ -44,9 +49,9 @@ const SitterSearch = () => {
               </select>
             </div>
           </h2>
-          <SitterItem />
-          <SitterItem />
-          <SitterItem />
+          {list.map((ele) => {
+            return <SitterItem props={ele} key={ele.id} />;
+          })}
         </div>
       </div>
     </>

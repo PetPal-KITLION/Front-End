@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const SitterWriteForm = () => {
   const [values, setValues] = useState({
-    category: "",
+    category: "1",
     title: "",
     date_start: "",
     date_end: "",
