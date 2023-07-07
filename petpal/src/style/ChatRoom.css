@@ -1,0 +1,29 @@
+#chatRoomDiv {
+  display: flex;
+  box-shadow: 1px 1px 1px 1px;
+  border-radius: 10px;
+  margin-bottom: 3%;
+  cursor: pointer;
+}
+#chatRoomLeft {
+  width: 15%;
+  margin-right: 3%;
+}
+#chatRoomLeft img {
+  width: 100%;
+  border-radius: 200px;
+  box-shadow: 1px 1px 1px 1px;
+}
+#chatRoomRight {
+  margin-top: 4%;
+}
+#chatRoomRight h6 {
+  font-weight: bold;
+}
+#chatRoomRight p {
+  font-size: 14px;
+}
+#chatRoomRightContent {
+  display: flex;
+  justify-content: space-between;
+}

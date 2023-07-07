@@ -1,0 +1,22 @@
+.offcanvas-header {
+  background-color: #fed586;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+.offcanvas-title {
+  display: flex;
+  align-items: flex-end;
+}
+.offcanvas-title p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10%;
+}
+.offcanvas-title img {
+  width: 80%;
+  margin-top: 10%;
+  margin-left: 20%;
+}
+.offcanvas {
+  border-radius: 100px;
+}

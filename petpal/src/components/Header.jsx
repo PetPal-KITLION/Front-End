@@ -4,11 +4,17 @@ import "../style/Category.css";
 import "../style/Dropdown.css";
 import Dropdown from "./Dropdown";
 import { useNavigate } from "react-router-dom";
+import ChatModal from './ChatModal';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const [chat,setChat] = useState(false);
 
   const navigate = useNavigate();
+
+  const clickChat = ()=>{
+    setChat(true);
+  }
 
   const clickHome = () => {
     navigate("/");
@@ -71,11 +77,13 @@ const Header = () => {
           <img src={`${process.env.PUBLIC_URL}/image/pets.png`} alt="pets" />
         </div>
         <div id="chat">
-          <img
+        <img
             src={`${process.env.PUBLIC_URL}/image/채팅창.png`}
-            style={{ width: "30%" }}
+            style={{ width: "30%" ,cursor:"pointer"}}
             alt="pets"
+            onClick={clickChat}
           />
+          { chat && <ChatModal chat={chat} setChat={setChat}/>}
         </div>
       </div>
 
