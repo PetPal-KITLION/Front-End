@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../style/ProfileContainer.css";
+import axios from 'axios';
 
 const ProfileContainer = () => {
   const [modify, setModify] = useState("no");
@@ -30,6 +31,18 @@ const ProfileContainer = () => {
       setModify("no");
     }
   };
+
+  const clickDelete = ()=>{
+    axios.post("http://172.30.93.59:8000/accounts/delete/",{},{
+      headers:{
+        "Authorization":localStorage.getItem("token")
+      }
+    }).then((res)=>{
+      console.log(res.data);
+    }).catch((err)=>{
+      console.log(err);
+    })
+  }
 
   return (
     <div id="ProfileParentDiv">
@@ -125,6 +138,7 @@ const ProfileContainer = () => {
             <button onClick={handleModify}>
               {modify === "no" ? "수정하기" : "수정완료"}
             </button>
+            <button onClick={clickDelete}>회원탈퇴</button>
           </div>
         </div>
         <div id="service">
