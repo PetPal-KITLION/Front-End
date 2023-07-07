@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import "../style/SitterInfo.css";
 
-const SitterInfo = () => {
-  const [info, setInfo] = useState({
-    infoName: "",
-    infoRNN: "",
-    infoNum: "",
-    infoAddress: "",
-  });
+const SitterInfo = ({ values, setValues }) => {
   const handleChange = (e) => {
-    setInfo(e.target.value);
+    const { name, value } = e.target;
+    setValues((preValue) => ({
+      ...preValue,
+      [name]: value,
+    }));
   };
 
   return (
@@ -33,18 +31,18 @@ const SitterInfo = () => {
             />
           </div>
           <div id="infoNameRRN">
-            <label htmlFor="name">이름 :</label>
+            <label for="name">이름 :</label>
             <input
               id="name"
               name="name"
-              value={info.infoName}
+              value={values.name}
               onChange={handleChange}
             />
-            <label htmlFor="rnn">주민등록번호 :</label>
+            <label for="rnn">주민등록번호 :</label>
             <input
               id="rnn"
               name="rnn"
-              value={info.infoRNN}
+              value={values.rnn}
               onChange={handleChange}
             />
           </div>
@@ -52,11 +50,11 @@ const SitterInfo = () => {
         <div id="info_2">
           <div id="infoNumFamily">
             <div id="infoN">
-              <label htmlFor="num">연락처 :</label>
+              <label fFor="number">연락처 :</label>
               <input
-                id="num"
-                name="num"
-                value={info.infoNum}
+                id="number"
+                name="number"
+                value={values.number}
                 onChange={handleChange}
               />
             </div>
@@ -64,22 +62,34 @@ const SitterInfo = () => {
               <label>가구원 :</label>
               <div id="infoCheck_1">
                 <div id="checkBoxPL">
-                  <input id="familyS" type="checkbox" name="familyS" />
-                  <label htmlFor="familyS">1인 가구</label>
+                  <input
+                    id="family"
+                    type="radio"
+                    name="family"
+                    value="1인가구"
+                    onClick={handleChange}
+                  />
+                  <label for="family">1인 가구</label>
                 </div>
                 <div id="checkBoxPL">
-                  <input id="familyM" type="checkbox" name="familyM" />
-                  <label htmlFor="familyM">다 가구</label>
+                  <input
+                    id="family"
+                    type="radio"
+                    name="family"
+                    value="다가구"
+                    onClick={handleChange}
+                  />
+                  <label for="family">다 가구</label>
                 </div>
               </div>
             </div>
           </div>
-          <label htmlFor="address">주소 :</label>
+          <label for="address">주소 :</label>
           <input
             id="address"
             name="address"
             placeholder="시/군/구 까지 써주세요."
-            value={info.infoAddress}
+            value={values.address}
             onChange={handleChange}
           />
         </div>
