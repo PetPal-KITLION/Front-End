@@ -2,7 +2,6 @@ import React from "react";
 import SLogo from "../components/SLogo";
 import "../style/SigninPage.css";
 import SigninForm from "../components/SigninForm";
-import SigninButton from "../components/SigninButton";
 
 const SigninPage = () => {
   return (
@@ -10,7 +9,6 @@ const SigninPage = () => {
       <div id="signinDiv">
         <SLogo />
         <SigninForm />
-        <SigninButton />
       </div>
     </div>
   );
