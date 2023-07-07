@@ -34,18 +34,16 @@ const LoginForm = () => {
     e.preventDefault();
     console.log(values);
     axios
-      .post(
-        "http://ec2-15-164-100-106.ap-northeast-2.compute.amazonaws.com:8000/accounts/login/",
-        {
-          email: values.id,
-          password: values.password,
-        }
-      )
+      .post("http://172.30.93.59:8000/accounts/login/", {
+        email: values.id,
+        password: values.password,
+      })
       .then((res) => {
         console.log(res.data);
         localStorage.setItem("token", res.data.token);
       })
       .catch((err) => {
+        alert("로그인 실패!");
         console.log(err);
       });
   };
