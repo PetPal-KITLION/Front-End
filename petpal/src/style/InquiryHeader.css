@@ -1,0 +1,16 @@
+#InquiryHeader {
+  display: flex;
+  align-items: center;
+}
+
+#headerInquiry {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+#headerTitle {
+  font-size: 15px;
+  color: gray;
+  font-weight: 700;
+  margin-left: 2%;
+}

@@ -14,7 +14,7 @@ const SitterComment = () => {
         <label id="commentTitle" htmlFor="petAllergy">
           마지막으로, 동물에 대한 알레르기가 있다면 자세히 작성해주세요.
         </label>
-        <input id="petAllergy" name="petAllergy" />
+        <input id="allergyComment" name="petAllergy" />
       </div>
     </div>
   );

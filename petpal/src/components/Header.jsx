@@ -3,16 +3,28 @@ import "../style/Logo.css";
 import "../style/Category.css";
 import "../style/Dropdown.css";
 import Dropdown from "./Dropdown";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+
+  const navigate = useNavigate();
+
+  const clickHome = () => {
+    navigate("/");
+  };
+
+  const clickProfile = () => {
+    navigate("/profile");
+  };
 
   return (
     <div id="HeaderDiv">
       <div id="logoDiv">
         <img
+          onClick={clickHome}
           src={`${process.env.PUBLIC_URL}/image/logo.png`}
-          style={{ width: "8%" }}
+          style={{ width: "8%", cursor: "pointer" }}
           alt="logo"
         />
         <div id="searchForm">
@@ -22,11 +34,12 @@ const Header = () => {
           <img
             src={`${process.env.PUBLIC_URL}/image/search.png`}
             style={{ width: "3%" }}
-            alt="person"
+            alt="search"
           />
           <img
+            onClick={clickProfile}
             src={`${process.env.PUBLIC_URL}/image/person.png`}
-            style={{ width: "3%" }}
+            style={{ width: "3%", cursor: "pointer" }}
             alt="person"
           />
           <img

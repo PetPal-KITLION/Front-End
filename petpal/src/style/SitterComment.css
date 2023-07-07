@@ -2,12 +2,18 @@
   display: flex;
 }
 
+#expPet,
+#petAllergy {
+  display: flex;
+  flex-direction: column;
+}
+
 #expPet {
   margin-right: 10%;
 }
 
 #expComment,
-#petAllergy {
+#allergyComment {
   width: 63vh;
   height: 20vh;
 }

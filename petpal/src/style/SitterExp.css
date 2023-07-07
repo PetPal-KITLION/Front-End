@@ -48,5 +48,10 @@
 #bird,
 #rode,
 #ect {
-  width: 23%;
+  width: 22%;
+}
+
+#checkText {
+  font-size: 15px;
+  font-weight: 700;
 }

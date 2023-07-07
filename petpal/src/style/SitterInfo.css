@@ -1,14 +1,20 @@
 #info {
   display: flex;
   height: 25vh;
+  font-size: 15px;
+  font-weight: 700;
 }
 #infoPicture {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   margin-right: 5%;
 }
+#infoN {
+  display: flex;
+  flex-direction: column;
+}
+
 #infoNameRRN {
   display: flex;
   flex-direction: column;
@@ -18,11 +24,6 @@
   font-size: 18px;
   font-weight: 700;
 }
-
-/* #name,
-#rnn {
-  width: 150%;
-} */
 
 #info_1 {
   display: flex;
@@ -55,5 +56,5 @@
 
 #familyS,
 #familyM {
-  width: 19%;
+  width: 18%;
 }

@@ -18,11 +18,15 @@ const SitterExp = () => {
           <div id="checkBox">
             <div id="checkBoxPL">
               <input type="checkbox" id="licenseY" name="licenseY" />
-              <label htmlFor="licenseY">네</label>
+              <label id="checkText" htmlFor="licenseY">
+                네
+              </label>
             </div>
             <div id="checkBoxPL">
               <input type="checkbox" id="licenseN" name="licenseN" />
-              <label htmlFor="licenseN">아니요</label>
+              <label id="checkText" htmlFor="licenseN">
+                아니요
+              </label>
             </div>
           </div>
         </div>
@@ -38,11 +42,15 @@ const SitterExp = () => {
           <div id="checkBox">
             <div id="checkBoxPL">
               <input type="checkbox" id="petExpY" name="petExpY" />
-              <label htmlFor="petExpY">네</label>
+              <label id="checkText" htmlFor="petExpY">
+                네
+              </label>
             </div>
             <div id="checkBoxPL">
               <input type="checkbox" id="petExpN" name="petExpN" />
-              <label htmlFor="petExpN">아니요</label>
+              <label id="checkText" htmlFor="petExpN">
+                아니요
+              </label>
             </div>
           </div>
         </div>
@@ -51,23 +59,33 @@ const SitterExp = () => {
           <div id="checkBox">
             <div id="checkBoxPL">
               <input type="checkbox" id="cat" name="cat" />
-              <label htmlFor="cat">고양이</label>
+              <label id="checkText" htmlFor="cat">
+                고양이
+              </label>
             </div>
             <div id="checkBoxPL">
               <input type="checkbox" id="dog" name="dog" />
-              <label htmlFor="dog">강아지</label>
+              <label id="checkText" htmlFor="dog">
+                강아지
+              </label>
             </div>
             <div id="checkBoxPL">
               <input type="checkbox" id="bird" name="bird" />
-              <label htmlFor="bird">조류</label>
+              <label id="checkText" htmlFor="bird">
+                조류
+              </label>
             </div>
             <div id="checkBoxPL">
               <input type="checkbox" id="rode" name="rode" />
-              <label htmlFor="rode">설치류</label>
+              <label id="checkText" htmlFor="rode">
+                설치류
+              </label>
             </div>
             <div id="checkBoxPL">
               <input type="checkbox" id="ect" name="ect" />
-              <label htmlFor="ect">기타</label>
+              <label id="checkText" htmlFor="ect">
+                기타
+              </label>
             </div>
           </div>
         </div>

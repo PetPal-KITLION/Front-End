@@ -7,8 +7,9 @@
   list-style: none;
   margin-left: 20vh;
   top: 20vh;
+  cursor: pointer;
 }
 
 #dropMenu:not(:last-child) {
-  margin-right: 18vh;
+  margin-right: 17vh;
 }

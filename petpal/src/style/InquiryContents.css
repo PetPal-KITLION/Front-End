@@ -1,0 +1,56 @@
+#inqText {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#inqTitleContents {
+  width: 90%;
+  background-color: #e8e8e8;
+  border: 1px solid #e8e8e8;
+}
+
+#inqContents {
+  width: 90%;
+  height: 40vh;
+  background-color: #e8e8e8;
+  border: 1px solid #e8e8e8;
+}
+
+#inquiryCategory,
+#agreeRec {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#inquiryCategory input {
+  margin-right: 1%;
+  margin-left: 0.5%;
+}
+
+#agreeRec input {
+  margin-right: 1%;
+  margin-left: 0.5%;
+}
+
+#Recevie {
+  display: flex;
+}
+
+#emaailRec {
+  margin-right: 5%;
+}
+
+#email_F,
+#email_B,
+#phone_F {
+  background-color: #e8e8e8;
+  border: 1px solid #e8e8e8;
+}
+
+#recTime {
+  margin-top: 1%;
+  font-size: 15px;
+  font-weight: 700;
+  color: gray;
+  text-align: center;
+}

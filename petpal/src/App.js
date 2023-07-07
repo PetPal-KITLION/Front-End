@@ -11,6 +11,7 @@ import ProfilePage from "./pages/ProfilePage";
 import Layout from "./components/Layout";
 import SitterApplyPage from "./pages/SitterApplyPage";
 import ResumePage from "./pages/ResumePage";
+import CustomerInquiry from "./pages/CustomerInquiry";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/admin" element={<AdminPage />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/resume" element={<ResumePage />} />
+        <Route path="/customerInquiry" element={<CustomerInquiry />} />
       </Routes>
     </Layout>
   );

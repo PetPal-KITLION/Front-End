@@ -1,11 +1,11 @@
-#sitterApplyDivP {
+#CustomerInquiryP {
   display: flex;
-  height: 100vh;
+  height: 90vh;
   align-items: center;
   justify-content: center;
 }
 
-#sitterApplyDiv {
+#CustomerInquiryDiv {
   width: 85%;
   height: 90vh;
   border-radius: 3%;
