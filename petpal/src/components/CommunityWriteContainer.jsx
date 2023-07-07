@@ -23,11 +23,7 @@ const CommunityWriteContainer = () => {
     axios
       .post(
         "http://ec2-15-164-100-106.ap-northeast-2.compute.amazonaws.com:8000/posts/board/create/",
-        {
-          category: "1",
-          title: "test",
-          content: "testetst",
-        },
+        values,
         {
           headers: {
             Authorization: localStorage.getItem("token"),
