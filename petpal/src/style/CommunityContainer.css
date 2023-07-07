@@ -5,70 +5,65 @@
   margin-top: 8%;
   margin-bottom: 5%;
 }
-#communityDiv {
+#communityParentDiv #communityDiv {
   width: 90vw;
   box-shadow: 5px 5px 5px;
   overflow: hidden;
   border-radius: 20px;
 }
-#communityDiv h2 {
+#communityParentDiv #communityDiv h2 {
   display: flex;
   justify-content: space-between;
   margin-left: 20px;
 }
-#communityRight button {
+#communityParentDiv #communityRight button {
   background-color: white;
   border: none;
   border-radius: 5px;
   padding: 3px 20px;
   box-shadow: 1px 1px 1px;
+  font-size: 2vh;
   font-weight: bold;
   cursor: pointer;
   margin-right: 20px;
 }
-#communityRight button:hover {
+#communityParentDiv #communityRight button:hover {
   background-color: #fed586;
 }
-#communityRight select {
-  padding: 3px 15px;
-  font-weight: bold;
-  border-radius: 5px;
-  margin-right: 20px;
-}
 
-#container {
+#communityParentDiv #container {
   display: flex;
 }
 
-#communityDiv #sideMenu {
+#communityParentDiv #communityDiv #sideMenu {
   width: 20%;
 }
 
-#communityDiv #menuList {
+#communityParentDiv #communityDiv #menuList {
   color: #7e7e7e;
   font-size: 16px;
 }
 
-#communityDiv #menuList li {
+#communityParentDiv #communityDiv #menuList li {
   margin-bottom: 4px;
 }
 
-#communityDiv #menuList li:hover {
+#communityParentDiv #communityDiv #menuList li:hover {
   color: black;
   font-weight: 700;
   cursor: pointer;
 }
 
-#communityDiv #list {
+#communityParentDiv #communityDiv #list {
   width: 70%;
 }
 
-#communityDiv #showMore {
+#communityParentDiv #communityDiv #showMore {
   display: block;
   margin: 0 auto;
 }
 
-#communityDiv #searchBar {
+#communityParentDiv #communityDiv #searchBar {
   display: block;
   width: 35%;
   margin: 8px auto;

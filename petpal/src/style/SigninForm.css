@@ -1,8 +1,12 @@
+#signinFormParentDiv {
+  position: relative;
+}
+
 #signinForm {
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin: 0 auto;
+  margin: 3% auto;
 }
 
 #signinForm div div {
@@ -11,28 +15,53 @@
 
 #signinForm label {
   display: block;
-  font-size: 12px;
+  font-size: 1.5vh;
   font-weight: 700;
-  margin-bottom: 4px;
-}
-#passwordP {
-  font-size: 8px;
-  position: relative;
-  right: 64px;
-  top: 24px;
+  margin-bottom: 1%;
 }
 
-#pwCheckP {
-  font-size: 8px;
+#signinForm #checkDuplication {
+  position: absolute;
+  right: 14%;
+  top: 6%;
+  background-color: white;
+  border: 1px solid #999999;
+  color: #999999;
+  padding: 4px;
+  width: 10%;
+  font-size: 2vh;
+}
+
+#signinForm #sendNumber {
+  position: absolute;
+  right: 14%;
+  top: 26%;
+  background-color: white;
+  border: 1px solid #999999;
+  color: #999999;
+  padding: 4px;
+  width: 10%;
+  font-size: 2vh;
+}
+
+#signinForm #passwordP {
+  font-size: 1vh;
   position: relative;
-  right: 142px;
-  top: 24px;
+  right: 10.5vh;
+  top: 5vh;
+}
+
+#signinForm #pwCheckP {
+  font-size: 1vh;
+  position: relative;
+  right: 23vh;
+  top: 5vh;
 }
 
 #signinForm h4 {
   position: relative;
-  left: 4px;
-  top: 24px;
+  left: 0.3vh;
+  top: 3vh;
   margin: 0;
 }
 
@@ -45,21 +74,28 @@
 
 #signinForm .checkButton {
   position: relative;
-  right: 32px;
-  top: 22px;
+  right: 4vh;
+  margin-top: 3vh;
   background-color: white;
   border: 1px solid #999999;
   color: #999999;
   padding: 4px;
-  width: 72px;
+  width: 35%;
+  font-size: 2vh;
 }
 
-#nameAndNickname,
-#emailDiv,
-#passwordDiv,
-#pwCheckDiv,
-#telDiv,
-#numberDiv {
+#signinForm #checkDuplication:hover,
+#signinForm #sendNumber:hover,
+#signinForm .checkButton:hover {
+  background-color: lightgray;
+}
+
+#signinForm #nameAndNickname,
+#signinForm #emailDiv,
+#signinForm #passwordDiv,
+#signinForm #pwCheckDiv,
+#signinForm #telDiv,
+#signinForm #numberDiv {
   display: flex;
   justify-content: space-between;
   margin-bottom: 12px;

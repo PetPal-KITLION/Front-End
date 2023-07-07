@@ -12,6 +12,8 @@ import Layout from "./components/Layout";
 import SitterApplyPage from "./pages/SitterApplyPage";
 import ResumePage from "./pages/ResumePage";
 import CustomerInquiry from "./pages/CustomerInquiry";
+import CommunityWritePage from "./pages/CommunityWritePage";
+import CommunityDetailPage from "./pages/CommunityDetailPage";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route path="/sitterSearch" element={<SitterSearch />} />
         <Route path="/sitterApply" element={<SitterApplyPage />} />
         <Route path="/community" element={<CommunityPage />} />
+        <Route path="/write" element={<CommunityWritePage />} />
+        <Route path="/detail" element={<CommunityDetailPage />} />
         <Route path="/help" element={<HelpPage />} />
         <Route path="/admin" element={<AdminPage />} />
         <Route path="/profile" element={<ProfilePage />} />

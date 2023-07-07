@@ -1,12 +1,16 @@
 #loginFormDiv {
   display: block;
   width: 40%;
-  margin: 0 auto;
+  margin: 3% auto;
+}
+
+#loginFormDiv * {
+  box-sizing: border-box;
 }
 
 #loginFormDiv > input {
   display: block;
-  width: 95.5%;
+  width: 100%;
   font-size: 20px;
   margin-bottom: 9px;
   border: 1px solid #f4f4f4;
@@ -14,11 +18,11 @@
   padding: 10px;
 }
 
-#loginKeep {
+#loginFormDiv #loginKeep {
   margin-top: 9px;
 }
 
-#loginButton {
+#loginFormDiv #loginButton {
   display: block;
   width: 100%;
   background-color: #fed586;
@@ -30,7 +34,11 @@
   font-weight: 700;
 }
 
-#loginText {
+#loginFormDiv #loginButton:hover {
+  background-color: #f8a528;
+}
+
+#loginFormDiv #loginText {
   text-decoration: none;
   font-size: 24px;
   color: #875100;

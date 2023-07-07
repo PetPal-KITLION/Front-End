@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../style/CommunityContainer.css";
 import CommunityList from "./CommunityList";
+import { Link } from "react-router-dom";
 
 const CommunityContainer = () => {
   const [list, setList] = useState([
@@ -53,7 +54,9 @@ const CommunityContainer = () => {
             />
           </div>
           <div id="communityRight">
-            <button type="button">글쓰기</button>
+            <Link to="/write">
+              <button type="button">글쓰기</button>
+            </Link>
           </div>
         </h2>
         <div id="container">

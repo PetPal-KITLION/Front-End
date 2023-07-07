@@ -3,7 +3,7 @@
   margin: 0 auto;
 }
 
-#signinButton {
+#signinButtonDiv #signinButton {
   display: block;
   margin: 36px auto;
   background-color: #f5d584;
@@ -17,6 +17,10 @@
   cursor: pointer;
 }
 
-#signinText {
+#signinButtonDiv #signinButton:hover {
+  background-color: #f8a528;
+}
+
+#signinButtonDiv #signinText {
   text-decoration: none;
 }

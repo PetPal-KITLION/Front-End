@@ -1,0 +1,104 @@
+#communityWriteParentDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8%;
+}
+
+#communityWriteDiv {
+  width: 90vw;
+  box-shadow: 5px 5px 5px;
+  overflow: hidden;
+  border-radius: 20px;
+  padding-bottom: 3%;
+}
+
+#communityWriteDiv h2 p {
+  display: inline;
+  font-size: 2vh;
+  color: #7e7e7e;
+  margin-left: 2%;
+}
+
+#communityWriteDiv #container {
+  width: 90%;
+  margin: 3% auto;
+}
+
+#communityWriteDiv #category div {
+  display: flex;
+  align-items: center;
+}
+
+#communityWriteDiv #category {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2%;
+  margin: 1% 0;
+}
+
+#communityWriteDiv input[type="radio"] {
+  cursor: pointer;
+}
+
+#communityWriteDiv #category div * {
+  font-size: 2vh;
+}
+
+#communityWriteDiv #main p {
+  margin: 1% 0;
+}
+
+#communityWriteDiv #main #title {
+  width: 100%;
+  background-color: #e8e8e8;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+#communityWriteDiv #main #content {
+  width: 100%;
+  height: 240px;
+  border: none;
+  resize: none;
+  background-color: #e8e8e8;
+  font-size: 16px;
+}
+
+#communityWriteDiv #main #file {
+  width: 30%;
+  background-color: #e8e8e8;
+  border: none;
+}
+
+#communityWriteDiv input[type="file"]::file-selector-button {
+  background-color: white;
+  position: absolute;
+  left: 35%;
+  bottom: -20%;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+#communityWriteDiv input[type="file"]::file-selector-button:hover {
+  background-color: lightgrey;
+}
+
+#communityWriteDiv #writeButton {
+  display: block;
+  margin: 0 auto;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px;
+  padding: 2px 6px;
+}
+
+#communityWriteDiv #writeButton:hover {
+  background-color: lightgray;
+}
+
+#communityWriteDiv #write {
+  text-decoration: none;
+}
