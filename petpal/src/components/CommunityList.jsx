@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../style/CommunityList.css";
+import { useNavigate } from "react-router-dom";
 
 const CommunityList = ({ props, hot }) => {
+  const navigate = useNavigate();
+  const clickPostDetail = () => {
+    navigate(`/community/${props.id}`);
+  };
+
   const hotItem = () => {
     if (hot) {
       return (
-        <div id="itemDiv">
+        <div
+          id="itemDiv"
+          onClick={clickPostDetail}
+          stlye={{ cursor: "pointer" }}
+        >
           <h5 id="hotItem">
             <div id="itemLeft">
               <img
@@ -56,7 +66,7 @@ const CommunityList = ({ props, hot }) => {
       );
     } else {
       return (
-        <div id="itemDiv">
+        <div id="itemDiv" onClick={clickPostDetail}>
           <h5 id="normalItem">
             <div id="item">
               <p id="writer" style={{ color: "#7f7f7f" }}>

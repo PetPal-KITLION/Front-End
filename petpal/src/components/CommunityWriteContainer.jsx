@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "../style/CommunityWriteContainer.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const CommunityWriteContainer = () => {
   const [values, setValues] = useState({
-    category: "question",
+    category: "1",
     title: "",
     content: "",
-    file: "",
   });
 
   const handleChange = (e) => {
@@ -17,6 +17,29 @@ const CommunityWriteContainer = () => {
       [name]: value,
     }));
     console.log(values);
+  };
+
+  const clickWrtieBtn = () => {
+    axios
+      .post(
+        "http://ec2-15-164-100-106.ap-northeast-2.compute.amazonaws.com:8000/posts/board/create/",
+        {
+          category: "1",
+          title: "test",
+          content: "testetst",
+        },
+        {
+          headers: {
+            Authorization: localStorage.getItem("token"),
+          },
+        }
+      )
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   return (
@@ -38,19 +61,19 @@ const CommunityWriteContainer = () => {
             <div>
               <input
                 type="radio"
-                id="question"
+                id="questionAsk"
                 name="category"
-                value="question"
+                value="질문"
                 onClick={handleChange}
               />
-              <label for="question">질문</label>
+              <label for="questionAsk">질문</label>
             </div>
             <div>
               <input
                 type="radio"
                 id="communication"
                 name="category"
-                value="communication"
+                value="소통"
                 onClick={handleChange}
               />
               <label for="communication">소통</label>
@@ -60,7 +83,7 @@ const CommunityWriteContainer = () => {
                 type="radio"
                 id="impormation"
                 name="category"
-                value="impormation"
+                value="정보"
                 onClick={handleChange}
               />
               <label for="impormation">정보</label>
@@ -70,7 +93,7 @@ const CommunityWriteContainer = () => {
                 type="radio"
                 id="day"
                 name="category"
-                value="day"
+                value="일상"
                 onClick={handleChange}
               />
               <label for="day">일상</label>
@@ -108,7 +131,9 @@ const CommunityWriteContainer = () => {
           </div>
         </div>
         <Link to="/community" id="write">
-          <button id="writeButton">글쓰기</button>
+          <button id="writeButton" onClick={clickWrtieBtn}>
+            글쓰기
+          </button>
         </Link>
       </div>
     </div>

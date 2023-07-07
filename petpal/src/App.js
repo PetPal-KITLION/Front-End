@@ -15,6 +15,7 @@ import CustomerInquiry from "./pages/CustomerInquiry";
 import InquiryAnswer from "./pages/InquiryAnswer";
 import CommunityWritePage from "./pages/CommunityWritePage";
 import CommunityDetailPage from "./pages/CommunityDetailPage";
+import SitterWritePage from "./pages/SitterWritePage";
 
 function App() {
   return (
@@ -27,13 +28,14 @@ function App() {
         <Route path="/sitterApply" element={<SitterApplyPage />} />
         <Route path="/community" element={<CommunityPage />} />
         <Route path="/write" element={<CommunityWritePage />} />
-        <Route path="/detail" element={<CommunityDetailPage />} />
+        <Route path="/community/:id" element={<CommunityDetailPage />} />
         <Route path="/help" element={<HelpPage />} />
         <Route path="/admin" element={<AdminPage />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/resume" element={<ResumePage />} />
         <Route path="/customerInquiry" element={<CustomerInquiry />} />
         <Route path="/answerInquiry" element={<InquiryAnswer />} />
+        <Route path="/sitterWrite" element={<SitterWritePage />} />
       </Routes>
     </Layout>
   );

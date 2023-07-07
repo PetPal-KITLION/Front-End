@@ -1,8 +1,24 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
 import "../style/CommunityDetailContainer.css";
+import axios from "axios";
 
 const CommunityDetailContainer = () => {
+  const [values, setValues] = useState({});
+  const { id } = useParams();
+  console.log(id);
+  useEffect(() => {
+    axios
+      .get(
+        `http://ec2-15-164-100-106.ap-northeast-2.compute.amazonaws.com:8000/posts/board/${id}`
+      )
+      .then((res) => {
+        console.log(res);
+        setValues(res.data);
+      })
+      .catch((err) => console.log(err));
+  }, []);
+
   return (
     <div id="communityDetailParentDiv">
       <div id="communityDetailDiv">
@@ -25,7 +41,7 @@ const CommunityDetailContainer = () => {
           <h5>
             <div id="detailHeader">
               <div id="HeaderLeft">
-                <p>작성자: ~~보호자님</p>
+                <p>작성자: {values.nickname}보호자님</p>
                 <div>
                   <img
                     src={`${process.env.PUBLIC_URL}/image/chatting.png`}
@@ -56,7 +72,7 @@ const CommunityDetailContainer = () => {
             />
           </h5>
         </div>
-        <div id="content"></div>
+        <div id="content">{values.content}</div>
         <div id="comment">
           <img
             id="person"

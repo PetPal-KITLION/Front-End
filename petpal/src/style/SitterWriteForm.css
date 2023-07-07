@@ -1,0 +1,49 @@
+#sitWriteRadioDiv {
+  display: flex;
+}
+#sitWriteRadioDiv div {
+  margin: 0 2%;
+}
+#sitWriteTitle {
+  width: 80%;
+}
+#sitWriteFormDiv {
+  margin: 3% 0;
+}
+#sitWriteFormDiv label {
+  margin-right: 20px;
+  font-weight: bold;
+}
+#sitWriteFormDiv div {
+  margin: 2% 0;
+}
+#sitWriteFormDiv #sitWritePeriod {
+  margin: 0 1%;
+}
+#sitWriteFormDiv #sitWriteRealFormDiv {
+  width: 70%;
+  margin: 0 auto;
+}
+#sitWriteDirectMoveRadioDiv {
+  display: flex;
+}
+#sitWriteDirectMoveRadioDiv div {
+  margin: 0 2%;
+}
+#fourInputDiv input {
+  width: 90%;
+}
+textarea {
+  width: 90%;
+  height: 13vh;
+  resize: none;
+}
+#submitSitWriteBtn {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  border: none;
+  box-shadow: 1px 1px 1px 1px;
+  background-color: white;
+  border-radius: 20px;
+}

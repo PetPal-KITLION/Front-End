@@ -1,45 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../style/CommunityContainer.css";
 import CommunityList from "./CommunityList";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const CommunityContainer = () => {
-  const [list, setList] = useState([
-    {
-      title: "1",
-      writer: "1",
-      category: "질문",
-      comments: 1,
-      recommend: 11,
-    },
-    {
-      title: "2",
-      writer: "2",
-      category: "소통",
-      comments: 2,
-      recommend: 2,
-    },
-    {
-      title: "3",
-      writer: "3",
-      category: "정보",
-      comments: 3,
-      recommend: 3,
-    },
-    {
-      title: "4",
-      writer: "4",
-      category: "일상",
-      comments: 4,
-      recommend: 4,
-    },
-  ]);
+  const [list, setList] = useState([]);
   const [hotItem, setHotItem] = useState(0);
   const [search, setSearch] = useState("");
 
   const handleSearch = (e) => {
     setSearch(e.target.value);
   };
+
+  useEffect(() => {
+    axios
+      .get(
+        "http://ec2-15-164-100-106.ap-northeast-2.compute.amazonaws.com:8000/posts/board/"
+      )
+      .then((res) => {
+        console.log(res);
+        setList(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   return (
     <div id="communityParentDiv">
@@ -70,11 +56,11 @@ const CommunityContainer = () => {
             </ul>
           </div>
           <div id="list">
-            {list.map((ele, i) => {
+            {list.map((ele) => {
               return (
                 <CommunityList
                   props={ele}
-                  key={i}
+                  key={ele.id}
                   hot={ele === list[hotItem] ? true : false}
                 />
               );

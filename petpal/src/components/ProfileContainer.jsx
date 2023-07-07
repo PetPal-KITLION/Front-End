@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../style/ProfileContainer.css";
-import axios from 'axios';
+import axios from "axios";
 
 const ProfileContainer = () => {
   const [modify, setModify] = useState("no");
@@ -32,17 +32,24 @@ const ProfileContainer = () => {
     }
   };
 
-  const clickDelete = ()=>{
-    axios.post("http://172.30.93.59:8000/accounts/delete/",{},{
-      headers:{
-        "Authorization":localStorage.getItem("token")
-      }
-    }).then((res)=>{
-      console.log(res.data);
-    }).catch((err)=>{
-      console.log(err);
-    })
-  }
+  const clickDelete = () => {
+    axios
+      .post(
+        "http://ec2-15-164-100-106.ap-northeast-2.compute.amazonaws.com:8000/accounts/delete/",
+        {},
+        {
+          headers: {
+            Authorization: localStorage.getItem("token"),
+          },
+        }
+      )
+      .then((res) => {
+        console.log(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
   return (
     <div id="ProfileParentDiv">

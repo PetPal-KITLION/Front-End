@@ -30,7 +30,7 @@ const SigninForm = () => {
     if (values.pwCheck === values.password) {
       axios
         .post(
-          "http://172.30.93.59:8000/accounts/signup/",
+          "http://ec2-15-164-100-106.ap-northeast-2.compute.amazonaws.com:8000/accounts/signup/",
           {
             name: values.name,
             email: values.emailFront + "@" + values.emailBakc,
@@ -55,7 +55,7 @@ const SigninForm = () => {
     e.preventDefault();
     axios
       .post(
-        "http://172.30.93.59:8000/accounts/email/",
+        "http://ec2-15-164-100-106.ap-northeast-2.compute.amazonaws.com:8000/accounts/email/",
         {
           email: values.emailFront + "@" + values.emailBakc,
         }
