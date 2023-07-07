@@ -4,17 +4,17 @@ import "../style/Category.css";
 import "../style/Dropdown.css";
 import Dropdown from "./Dropdown";
 import { useNavigate } from "react-router-dom";
-import ChatModal from './ChatModal';
+import ChatModal from "./ChatModal";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
-  const [chat,setChat] = useState(false);
+  const [chat, setChat] = useState(false);
 
   const navigate = useNavigate();
 
-  const clickChat = ()=>{
+  const clickChat = () => {
     setChat(true);
-  }
+  };
 
   const clickHome = () => {
     navigate("/");
@@ -23,6 +23,12 @@ const Header = () => {
   const clickProfile = () => {
     navigate("/profile");
   };
+
+  const clickLogin = () => {
+    navigate("/login");
+  };
+
+  const logToken = localStorage.getItem("token");
 
   return (
     <div id="HeaderDiv">
@@ -42,12 +48,21 @@ const Header = () => {
             style={{ width: "3%" }}
             alt="search"
           />
-          <img
-            onClick={clickProfile}
-            src={`${process.env.PUBLIC_URL}/image/person.png`}
-            style={{ width: "3%", cursor: "pointer" }}
-            alt="person"
-          />
+          {logToken === null ? (
+            <img
+              onClick={clickLogin}
+              src={`${process.env.PUBLIC_URL}/image/login.png`}
+              style={{ width: "3%", cursor: "pointer" }}
+              alt="person"
+            />
+          ) : (
+            <img
+              onClick={clickProfile}
+              src={`${process.env.PUBLIC_URL}/image/person.png`}
+              style={{ width: "3%", cursor: "pointer" }}
+              alt="person"
+            />
+          )}
           <img
             src={`${process.env.PUBLIC_URL}/image/three.png`}
             style={{ width: "3%" }}
@@ -77,13 +92,13 @@ const Header = () => {
           <img src={`${process.env.PUBLIC_URL}/image/pets.png`} alt="pets" />
         </div>
         <div id="chat">
-        <img
+          <img
             src={`${process.env.PUBLIC_URL}/image/채팅창.png`}
-            style={{ width: "30%" ,cursor:"pointer"}}
+            style={{ width: "30%", cursor: "pointer" }}
             alt="pets"
             onClick={clickChat}
           />
-          { chat && <ChatModal chat={chat} setChat={setChat}/>}
+          {chat && <ChatModal chat={chat} setChat={setChat} />}
         </div>
       </div>
 
