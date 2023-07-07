@@ -16,6 +16,7 @@ const SigninForm = () => {
   const [checkNum, setCheckNum] = useState("");
 
   const [check, setCheck] = useState("no");
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setValues((preValue) => ({
@@ -110,6 +111,17 @@ const SigninForm = () => {
             />
           </div>
           <p id="pwCheckP">비밀번호를 한 번더 입력해주세요.</p>
+        </div>
+        <div id="tel">
+          <div>
+            <label htmlFor="pwCheck">휴대전화</label>
+            <input
+              id="tel"
+              name="tel"
+              value={values.tel}
+              onChange={handleChange}
+            />
+          </div>
         </div>
       </form>
     </div>

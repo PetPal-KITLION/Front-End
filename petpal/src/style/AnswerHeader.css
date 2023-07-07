@@ -1,0 +1,16 @@
+#AnswerHeader {
+  display: flex;
+  align-items: center;
+}
+
+#headerAnswer {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+#AnswerTitle {
+  font-size: 15px;
+  color: gray;
+  font-weight: 700;
+  margin-left: 2%;
+}

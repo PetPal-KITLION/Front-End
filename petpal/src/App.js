@@ -12,6 +12,7 @@ import Layout from "./components/Layout";
 import SitterApplyPage from "./pages/SitterApplyPage";
 import ResumePage from "./pages/ResumePage";
 import CustomerInquiry from "./pages/CustomerInquiry";
+import InquiryAnswer from "./pages/InquiryAnswer";
 import CommunityWritePage from "./pages/CommunityWritePage";
 import CommunityDetailPage from "./pages/CommunityDetailPage";
 
@@ -32,6 +33,7 @@ function App() {
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/resume" element={<ResumePage />} />
         <Route path="/customerInquiry" element={<CustomerInquiry />} />
+        <Route path="/answerInquiry" element={<InquiryAnswer />} />
       </Routes>
     </Layout>
   );

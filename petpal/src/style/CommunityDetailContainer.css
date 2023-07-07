@@ -49,7 +49,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 1% 0 0 2%;
+  padding-left: 2%;
 }
 
 #HeaderLeft img {
@@ -60,9 +60,77 @@
   margin: 0;
 }
 
-#communityDetailParentDiv #HeaderLeft {
+#communityDetailParentDiv #HeaderRight {
   display: flex;
-  justify-content: flex-start;
+  gap: 1%;
+  margin-right: 5%;
   align-items: center;
-  padding: 1% 0 0 2%;
+}
+
+#communityDetailParentDiv #HeaderRight p {
+  font-size: 2.5vh;
+  margin-right: 5%;
+}
+
+#communityDetailParentDiv #HeaderRight * {
+  margin-right: 5%;
+}
+
+#communityDetailParentDiv #premiumIcon {
+  border-radius: 2rem;
+  background-color: blueviolet;
+  padding: 1%;
+  position: absolute;
+  right: 7.5%;
+  top: 44%;
+}
+
+#communityDetailParentDiv #content {
+  width: 80%;
+  height: 240px;
+  margin: 2% auto;
+  box-shadow: 3px 3px 5px;
+  background-color: #e4e4e4;
+  border-radius: 15px;
+}
+
+#communityDetailParentDiv #comment {
+  width: 80%;
+  height: 80px;
+  background-color: #e4e4e4;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px;
+  margin: 2% auto;
+}
+
+#communityDetailParentDiv #comment #person {
+  border-radius: 3rem;
+  padding: 1%;
+  box-shadow: 3px 3px 5px;
+  background-color: white;
+  opacity: 0.5;
+  position: relative;
+  right: 2%;
+  bottom: 15%;
+}
+
+#communityDetailParentDiv #commentWrite {
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 700;
+}
+
+#communityDetailParentDiv #commentContent {
+  width: 100%;
+  height: 84px;
+  border: none;
+  resize: none;
+  background-color: #e4e4e4;
+}
+
+#communityDetailParentDiv #commentWrite button {
+  border: none;
+  padding: 1% 2%;
+  border: 1px solid lightgrey;
+  margin-bottom: 3%;
 }

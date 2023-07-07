@@ -38,11 +38,56 @@ const CommunityDetailContainer = () => {
                 <img
                   src={`${process.env.PUBLIC_URL}/image/tooltip.png`}
                   alt="tooltip"
-                  style={{ width: "50%" }}
+                  style={{ width: "40%" }}
                 />
+                <p>1</p>
+                <img
+                  src={`${process.env.PUBLIC_URL}/image/thumb_up.png`}
+                  alt="thumb_up"
+                  style={{ width: "40%" }}
+                />
+                <p>2</p>
               </div>
             </div>
+            <img
+              id="premiumIcon"
+              src={`${process.env.PUBLIC_URL}/image/pets.png`}
+              alt="pets"
+            />
           </h5>
+        </div>
+        <div id="content"></div>
+        <div id="comment">
+          <img
+            id="person"
+            src={`${process.env.PUBLIC_URL}/image/person.png`}
+            alt="person"
+            style={{ width: "5%", height: "60%" }}
+          />
+          <p>작성자: </p>
+        </div>
+        <div id="comment">
+          <img
+            id="person"
+            src={`${process.env.PUBLIC_URL}/image/person.png`}
+            alt="person"
+            style={{ width: "5%", height: "60%" }}
+          />
+          <p>작성자: </p>
+        </div>
+        <div id="comment">
+          <img
+            id="person"
+            src={`${process.env.PUBLIC_URL}/image/person.png`}
+            alt="person"
+            style={{ width: "5%", height: "60%" }}
+          />
+          <p>작성자: </p>
+        </div>
+        <div id="commentWrite">
+          <p>댓글 작성:</p>
+          <textarea id="commentContent" />
+          <button>확인</button>
         </div>
       </div>
     </div>
