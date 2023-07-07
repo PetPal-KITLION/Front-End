@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import IdSearchModal from "./IdSearchModal";
 import PwSearchModal from "./PwSearchModal";
+import axios from "axios";
 
 const LoginForm = () => {
   const [values, setValues] = useState({
@@ -32,6 +33,21 @@ const LoginForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(values);
+    axios
+      .post(
+        "http://ec2-15-164-100-106.ap-northeast-2.compute.amazonaws.com:8000/accounts/login/",
+        {
+          email: values.id,
+          password: values.password,
+        }
+      )
+      .then((res) => {
+        console.log(res.data);
+        localStorage.setItem("token", res.data.token);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   console.log(pwShow);
@@ -63,11 +79,9 @@ const LoginForm = () => {
           />
           <label for="loginKeep">로그인 유지</label>
         </div>
-        <Link to="../" id="loginText">
-          <button id="loginButton" type="submit">
-            Pet Pal 로그인
-          </button>
-        </Link>
+        <button id="loginButton" type="submit">
+          Pet Pal 로그인
+        </button>
       </form>
       <div id="signAndSearch">
         <Link to="/Signin">회원가입</Link>
