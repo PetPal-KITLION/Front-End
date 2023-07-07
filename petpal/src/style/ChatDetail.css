@@ -1,0 +1,45 @@
+#chatDetailOpponentDiv {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+#chatDetailOpponentDiv img {
+  width: 17%;
+  border-radius: 100px;
+}
+#chatDetailOpponentDiv p {
+  width: 85%;
+  margin-left: 15px;
+  border: 1px solid brown;
+  border-radius: 30px;
+  padding: 10px;
+}
+#chatDetailHostDiv p {
+  width: 85%;
+  margin-left: 15px;
+  border: 1px solid brown;
+  border-radius: 30px;
+  padding: 10px;
+}
+#chatDetailHostDiv {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+#chatDetailHostDiv h5 {
+  border: 1px solid black;
+  border-radius: 100px;
+  padding: 10px;
+  margin-left: 10px;
+}
+#chatSendDiv {
+  width: 367px;
+  height: 40px;
+  box-shadow: 1px 1px 1px 1px;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 100px;
+}
